@@ -1,0 +1,14 @@
+write a code to enctryte and decrupt
+write a code to reverse order of array or number 12345678
+write a code to change UPPER case character into lower case 
+write a code to change LOWER case character into UPPER case 
+
+Write code that jumps to label L1 if either bit 4, 5, or 
+6 is set in the BL register.
+ • Write code that jumps to label L1 if bits 4, 5, and 6 
+are all set in the BL register.
+ • Write code that jumps to label L2 if AL has even 
+parity.
+ • Write code that jumps to label L3 if EAX is negative.
+ • Write code that jumps to label L4 if the expression 
+(EBX – ECX) is greater than zero

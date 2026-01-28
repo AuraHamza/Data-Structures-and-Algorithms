@@ -1,0 +1,31 @@
+Include irvine32.inc
+.stack
+.data 
+n byte"Madam",0
+co byte SizeOF n dup (0)
+
+.code 
+main proc 
+mov esi,offset n
+mov ecx,lengthof n-1
+l:
+movzx eax, BYTE PTR [esi] 
+push eax
+inc esi
+loop l
+
+mov esi,offset co
+mov ecx,lengthof n-1
+
+l1:
+pop eax
+mov [esi],al
+inc esi
+loop l1
+mov BYTE PTR [esi], 0
+
+mov edx,offset co
+call writestring 
+
+main EndP
+END main 
